@@ -1,6 +1,5 @@
 import Application.DefaultEventLogger;
 import Application.Interfaces.EventLogger;
-
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,4 +1,4 @@
-# Event_Logging_And_COunting_Framework
+# Event_Logging_And_Counting_Framework
 
 A minimal, thread-safe Java framework for event logging and event counting.  
 This MVP uses a Singleton design, asynchronous file-based logging, and stores each event as a JSON object.
@@ -32,6 +32,7 @@ public interface EventLogger {
     String readLog();
 }
 ```
+---
 
 ## 🧩 Default Implementation
 DefaultEventLogger implements the framework with:
@@ -45,6 +46,8 @@ DefaultEventLogger implements the framework with:
 * A fixed file path (will be configurable later)
 
 * Internal synchronization + async queue for safe multithreading
+
+---
 
 ## 🛠️ Usage Example
 
@@ -63,7 +66,7 @@ public class Demo {
     }
 }
 ```
-
+---
 ## 📁 Log Format (JSON per line)
 
 #### Example entry:
@@ -80,6 +83,7 @@ public class Demo {
 ```
 Each event is appended as a separate JSON object.
 
+---
 ## 🧱 Design Notes
 * Singleton ensures single global logger instance
 
@@ -88,7 +92,7 @@ Each event is appended as a separate JSON object.
 * JSON makes logs easily parseable by tools
 
 * Fixed log path keeps MVP simple
-
+---
 ## 🗺️ Roadmap
 * Configurable log directory
 
@@ -101,10 +105,15 @@ Each event is appended as a separate JSON object.
 * Maven/Gradle packaging
 
 * Unit tests and benchmarks
-
+---
 ## 📜 License
 MIT License.
 
+---
 ## 🤝 Contributing
 This is currently an MVP.
-Suggestions, issues, and later PRs are welcome once structure stabilizes.   
+Suggestions, issues, and later PRs are welcome once structure stabilizes.
+
+---
+
+---
